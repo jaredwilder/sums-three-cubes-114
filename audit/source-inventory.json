@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-14",
+  "method": "Lexical named theorem/lemma declarations, comments and strings removed; not a kernel or novelty count. Includes private lemmas and specializations.",
+  "modules": 1,
+  "named_theorem_lemma_declarations": 14,
+  "files": [
+    {
+      "file": "lean/S3C_Oracle_114.lean",
+      "sha256": "46b410193639174f1099a739f9cd13972a9efe2463f0d81d6ad357154b6a3c63",
+      "declarations": [
+        {
+          "kind": "theorem",
+          "name": "cube_residues_mod9"
+        },
+        {
+          "kind": "theorem",
+          "name": "s3c_mod9_not_four"
+        },
+        {
+          "kind": "theorem",
+          "name": "s3c_mod9_not_five"
+        },
+        {
+          "kind": "theorem",
+          "name": "k114_mod9"
+        },
+        {
+          "kind": "theorem",
+          "name": "k114_obstruction_clear"
+        },
+        {
+          "kind": "theorem",
+          "name": "s3c_114_each_cube_minus1"
+        },
+        {
+          "kind": "theorem",
+          "name": "s3c_114_no_soln_height3"
+        },
+        {
+          "kind": "theorem",
+          "name": "cube_residues_mod7"
+        },
+        {
+          "kind": "theorem",
+          "name": "k114_mod7"
+        },
+        {
+          "kind": "theorem",
+          "name": "s3c_114_mod7_zero_count"
+        },
+        {
+          "kind": "theorem",
+          "name": "s3c_114_mod7_one_div_by7"
+        },
+        {
+          "kind": "theorem",
+          "name": "two_not_cube_mod7"
+        },
+        {
+          "kind": "theorem",
+          "name": "s3c_114_combined_sieve_necessary"
+        },
+        {
+          "kind": "theorem",
+          "name": "s3c_114_from_triple"
+        }
+      ],
+      "sorry_or_admit_tokens": 0,
+      "axiom_declarations": 0
+    }
+  ]
+}

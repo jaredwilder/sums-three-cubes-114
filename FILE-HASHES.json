@@ -1,0 +1,22 @@
+[
+  {
+    "file": ".gitignore",
+    "sha256": "a7b4971c9edcb379424c427cb8ffd4b958ae212e7bf71b75857f9d670c1eb84c"
+  },
+  {
+    "file": "archive/README.md",
+    "sha256": "72e591e0a1969c8bea3712f73a240eb4beadf6add096386c6a014f4cd1d719cb"
+  },
+  {
+    "file": "audit/source-inventory.json",
+    "sha256": "0b75a212f20bc29f6cdd7d943386fe345ec0fc9ee98cfb1f0f8ea257bd418d10"
+  },
+  {
+    "file": "lean/S3C_Oracle_114.lean",
+    "sha256": "46b410193639174f1099a739f9cd13972a9efe2463f0d81d6ad357154b6a3c63"
+  },
+  {
+    "file": "README.md",
+    "sha256": "334ea659c52123bd1a5e4536e7d86dd89fd7d2f96fbdf5146a199ca69cc5afbd"
+  }
+]
