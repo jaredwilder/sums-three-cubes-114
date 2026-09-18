@@ -1,31 +1,58 @@
-# Sums of three cubes — 114
+# Sums of three cubes — the case `114`
 
-This repository contains the recovered modular and computational program for
+For
 
 \[
-a^3+b^3+c^3=114.
+a^3+b^3+c^3=114,
 \]
 
-The equation itself remains unresolved in this package.
+this repository develops exact congruence restrictions and a mod-21 sieve used in finite searches for integer solutions.
 
-## Formal ingredients
+## Exact modular restriction
 
-[`lean/S3C_Oracle_114.lean`](lean/S3C_Oracle_114.lean) formalizes the mod-9 and mod-7 restrictions used by the search, including the exact mod-7 one-zero-coordinate condition.
+The Lean development [`lean/S3C_Oracle_114.lean`](lean/S3C_Oracle_114.lean) formalizes the mod-9 and mod-7 constraints relevant to `114`.
 
-These ingredients feed an exact mod-21 CRT sieve described in [`archive/README.md`](archive/README.md). The historical computation records searches at `H=5,000` and `H=20,000`.
+In particular, the theorem
 
-The Lean theorem named `s3c_114_combined_sieve_necessary` proves the necessary mod-7 zero-coordinate condition. The complete mod-21 residue table is an exact arithmetic consequence used by the search layer, but it is not itself kernelized in the recovered file.
+```text
+s3c_114_combined_sieve_necessary
+```
 
-## Source inventory
+proves the necessary mod-7 condition used by the search: any solution lies in the residue pattern in which the required coordinate class vanishes modulo 7.
 
-[`audit/source-inventory.json`](audit/source-inventory.json) records file hashes and declaration counts for the recovered source.
+Combined with the mod-3/mod-9 information, this yields an exact CRT filter modulo 21. The complete residue table and its use in the finite search are described in [`archive/README.md`](archive/README.md).
 
-The original seven PARI scripts and their raw output files are not present in this repository, so the historical large searches have not been rerun here.
+## Finite computation
 
-## Main files
+The recovered computation records searches at
 
-- [`lean/S3C_Oracle_114.lean`](lean/S3C_Oracle_114.lean) — modular Lean development.
-- [`archive/README.md`](archive/README.md) — CRT sieve and recorded computational program.
-- [`audit/source-inventory.json`](audit/source-inventory.json) — source inventory and hashes.
+```text
+H = 5,000
+H = 20,000
+```
+
+under the mod-21 sieve.
+
+The modular restrictions are exact. The historical large-search record is less complete: the original seven PARI scripts and their raw output files were not recovered into this repository, so those runs are preserved as historical computation records rather than presented as newly replayed searches.
+
+## Formal source
+
+The main formal file is
+
+- [`lean/S3C_Oracle_114.lean`](lean/S3C_Oracle_114.lean) — Lean proofs of the modular restrictions.
+
+[`audit/source-inventory.json`](audit/source-inventory.json) records source hashes and declaration counts for the recovered package.
+
+The full mod-21 residue table is an exact arithmetic consequence used by the search layer, but it is not separately kernelized in the recovered Lean file.
+
+## Scope
+
+The contribution here is the modular reduction and the recovered finite-search program. The Diophantine equation
+
+\[
+a^3+b^3+c^3=114
+\]
+
+is not solved by the material currently in this repository.
 
 Author: Jared Wilder.
